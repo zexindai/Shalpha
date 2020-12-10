@@ -1,0 +1,30 @@
+status: 200
+cache-control: private
+content-length: 701
+content-type: text/html; charset=gb2312
+server: Microsoft-IIS/7.5
+x-aspnet-version: 2.0.50727
+set-cookie: ASP.NET_SessionId=c4pypr3w1fg4r03zlvozwb55; path=/; HttpOnly
+x-powered-by: ASP.NET
+date: Thu, 10 Dec 2020 10:35:47 GMT
+content-location: http://www.swsindex.com/downloadfiles.aspx?swindexcode=%B4%AB%C3%BD&type=530&columnid=8892
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Œﬁ±ÍÃ‚“≥
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /></head>
+<body>
+    <form name="form1" method="post" action="downloadfiles.aspx?swindexcode=%u4f20%u5a92&amp;type=530&amp;columnid=8892" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg2Njc2NjM3M2RkYpx7XSv5LutyuTrfYOcwp//guOY=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1282D04F" />
+    <div >
+   
+    </div>
+    </form>
+</body>
+</html>
