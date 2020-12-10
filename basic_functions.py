@@ -10,10 +10,8 @@ def download_wait(directory, timeout, nfiles=None):
         files = os.listdir(directory)
         if nfiles and len(files) != nfiles:
             dl_wait = True
-
         for fname in files:
             if fname.endswith('.crdownload'):
                 dl_wait = True
-
         seconds += 1
     return seconds
