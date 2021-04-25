@@ -1,8 +1,28 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+#Download SwClass based on Selenium
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 import pandas as pd
-import basic_functions as bf
+import time
+
+def download_wait(directory, timeout, nfiles=None):
+    seconds = 0
+    dl_wait = True
+    while dl_wait and seconds < timeout:
+        time.sleep(1)
+        dl_wait = False
+        files = os.listdir(directory)
+        if nfiles and len(files) != nfiles:
+            dl_wait = True
+        for fname in files:
+            if fname.endswith('.crdownload'):
+                dl_wait = True
+        seconds += 1
+    return seconds
 
 def download_SwClass():
     path = os.getcwd()
@@ -14,7 +34,9 @@ def download_SwClass():
     browser.get('http://www.swsindex.com/idx0530.aspx')
     element=browser.find_element_by_xpath('//*[@id="form1"]/div[3]/div/div[1]/div[1]/div[3]/table[2]/tbody/tr[2]/td/table/tbody/tr/td[3]/a')
     element.click()
-    bf.download_wait(path, 60)
+    download_wait(path, 60)
     browser.quit()
     df = pd.DataFrame(pd.read_html('SwClass.xls')[0])
     return df
+    
+download_SwClass()
